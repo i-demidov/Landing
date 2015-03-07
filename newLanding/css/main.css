@@ -1,4 +1,4 @@
-.l-body: {
+.l-body {
 	width: 100%;
 	min-width: 960px;
 	left: 0;
@@ -7,5 +7,72 @@
 	position: absolute;
 	overflow: scroll;
 	overflow-x: hidden;
-	background: #183561;
-};
+}
+
+.b-slider {
+	position: relative;
+	height: 768px;
+	/*background: url('../images/50-Low-Poly-Backgrounds/p1.jpg') 50% 0 no-repeat;
+	background-size: cover;*/
+}
+
+.b-slider-background {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.b-contact {
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+}
+
+.b-contact-background {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: #eeeeee;
+	opacity: .5;
+}
+
+.b-contact-info {
+	position: relative;
+	width: 960px;
+	margin: 0 auto;
+	font-size: 14px;
+	line-height: 26px;
+}
+
+.b-contact-info-phone,
+.b-contact-info-email {
+	position: relative;
+	float: left;
+	padding-left: 22px;
+}
+
+.b-contact-info-phone:before,
+.b-contact-info-email:before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 0;
+	margin-top: -11px;
+	width: 22px;
+	height: 20px;
+	background: url('../images/phone.png') no-repeat;
+}
+
+.b-contact-info-email {
+	float: right;
+}
+
+.b-contact-info-email:before {
+	margin-top: -10px;
+	background-image: url('../images/email.png');
+}

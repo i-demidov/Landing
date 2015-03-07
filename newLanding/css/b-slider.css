@@ -1,0 +1,15 @@
+.b-slider {
+	position: relative;
+	height: 768px;
+	/*background: url('../images/50-Low-Poly-Backgrounds/p1.jpg') 50% 0 no-repeat;
+	background-size: cover;*/
+}
+
+.b-slider-background {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}

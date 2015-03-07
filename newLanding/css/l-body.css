@@ -1,0 +1,10 @@
+.l-body {
+	width: 100%;
+	min-width: 960px;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	position: absolute;
+	overflow: scroll;
+	overflow-x: hidden;
+}
