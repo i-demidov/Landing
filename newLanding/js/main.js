@@ -41,3 +41,14 @@
 
 	setTimeout(changeBackground, 5000);
 })();
+
+(function () {
+	var $document = $(document),
+		$navigation = $('.js-navigation'),
+		$contact = $('.js-contact'),
+		defaultOffsetTop = $navigation.offset().top - $contact.height();
+
+	$document.on('scroll', function () {
+		$navigation.toggleClass('b-navigation--sticky', $document.scrollTop() > defaultOffsetTop);
+	});
+})();
