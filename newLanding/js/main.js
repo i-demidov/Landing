@@ -19,10 +19,11 @@
 })());*/
 
 (function () {
-	var backgroundIndex = 1;
+	var backgroundIndex = 2;
 
 	function changeBackground () {
-		var $currentBackground = $('.js-slider-background'),
+		var $currentBackground = $('.js-slider-background:first'),
+			$cachedBackground = $('.js-slider-background:last'),
 			$newBackground = $currentBackground.clone();
 
 		backgroundIndex = backgroundIndex === 50 ? 1 : backgroundIndex + 1;
@@ -30,13 +31,14 @@
 
 		$newBackground
 			.css('display', 'none')
-			.insertAfter($currentBackground)
-			.attr('src', 'images/50-Low-Poly-Backgrounds/p' + backgroundIndex + '.jpg')
-			.fadeIn('fast', function () {
-				$currentBackground.remove();
+			.insertAfter($cachedBackground)
+			.attr('src', 'images/50-Low-Poly-Backgrounds/p' + backgroundIndex + '.jpg');
 
-				setTimeout(changeBackground, 5000);
-			});
+		$cachedBackground.fadeIn('fast', function () {
+			$currentBackground.remove();
+
+			setTimeout(changeBackground, 5000);
+		});
 	}
 
 	setTimeout(changeBackground, 5000);
