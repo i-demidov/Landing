@@ -45,12 +45,27 @@
 })();
 
 (function () {
-	var $document = $(document),
+	var $window = $(window),
 		$navigation = $('.js-navigation'),
 		$contact = $('.js-contact'),
-		defaultOffsetTop = $navigation.offset().top - $contact.height();
+		offsetTop = $navigation.offset().top,
+		defaultOffsetTop = offsetTop - $contact.height();
 
-	$document.on('scroll', function () {
-		$navigation.toggleClass('b-navigation--sticky', $document.scrollTop() > defaultOffsetTop);
-	});
+	function fixNavigationBlock () {
+		var navigationOnBottom = ($window.height() + $window.scrollTop()) < ($navigation.height() + offsetTop);
+		
+		if (navigationOnBottom) {
+			$navigation
+				.removeClass('b-navigation--sticky')
+				.addClass('b-navigation--sticky_bottom');
+		} else {
+			$navigation
+				.removeClass('b-navigation--sticky_bottom')
+				.toggleClass('b-navigation--sticky', $window.scrollTop() > defaultOffsetTop);
+		}
+	}
+
+	$window.on('scroll resize', fixNavigationBlock);
+
+	fixNavigationBlock();
 })();
