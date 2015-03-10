@@ -237,12 +237,16 @@
 }
 
 .b-features-head-list-item-text {
-	padding-top: 92px;
+	display: table-cell;
+	/*padding-top: 92px;*/
+	height: 220px;
+	width: 220px;
+	vertical-align: middle;
 }
 
 .b-features-head-list-item-text h4 {
 	color: #52a276;
-	font-family: 'Proxima Nova Rg';
+	font-family: 'Proxima Nova Rg', Arial, Helvetica, sans-serif;
 	font-size: 16px;
 	line-height: 20px;
 	font-weight: normal;
@@ -254,7 +258,7 @@
 
 .b-features-head-list-item-text p {
 	color: #545454;
-	font-family: 'Proxima Nova Rg';
+	font-family: 'Proxima Nova Rg', Arial, Helvetica, sans-serif;
 	font-size: 14px;
 	line-height: 20px;
 	font-weight: normal;
@@ -275,15 +279,74 @@
 
 .b-features-head-list-item-top_box-icon {
 	display: inline-block;
+	position: relative;
 	height: 86px;
 	width: 86px;
-	background: #4e5670;
+	/*background: url(../images/divan.png) 0 50% no-repeat;
+	background-size: contain;*/
+	background-color: #4e5670;
 	border: 0 none;
 	border-radius: 50%;
-	transition: background .35s ease-in-out 0s;
+	transition: background-color .35s ease-in-out 0s;
 }
 
-.b-features-head-list-item-top_box-icon span {
+.b-features-head-list-item-top_box-icon-background {
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -38px 0 0 -38px;
+	height: 76px;
+	width: 76px;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: contain;
+	border: 0 none;
+	border-radius: 50%;
+	transition: background-color .35s ease-in-out 0s;
+}
+
+.b-features-head-list-item-top_box-icon-background--hidden {
+	opacity: 0;
+	transition: opacity .35s ease-in-out 0s;
+}
+
+.b-features-head-list-item-top_box-icon-background--divan {
+	background-image: url(../images/divan--light.png);
+}
+
+.b-features-head-list-item-top_box-icon-background--divan.b-features-head-list-item-top_box-icon-background--hidden {
+	background-image: url(../images/divan--green.png);
+}
+
+.b-features-head-list-item-top_box-icon-background--vip {
+	background-image: url(../images/certificat--light.png);
+	background-size: 65%;
+}
+
+.b-features-head-list-item-top_box-icon-background--vip.b-features-head-list-item-top_box-icon-background--hidden {
+	background-image: url(../images/certificat--green.png);
+}
+
+.b-features-head-list-item-top_box-icon-background--control {
+	background-image: url(../images/control--light.png);
+	background-size: 80%;
+}
+
+.b-features-head-list-item-top_box-icon-background--control.b-features-head-list-item-top_box-icon-background--hidden {
+	background-image: url(../images/control--green.png);
+}
+
+.b-features-head-list-item-top_box-icon-background--lock {
+	background-image: url(../images/lock--light.png);
+	background-size: 80%;
+}
+
+.b-features-head-list-item-top_box-icon-background--lock.b-features-head-list-item-top_box-icon-background--hidden {
+	background-image: url(../images/lock--green.png);
+}
+
+/*.b-features-head-list-item-top_box-icon span {
 	color: #ffffff;
 	font-size: 40px;
 	line-height: 86px;
@@ -293,24 +356,28 @@
 
 .b-features-head-list-item-top_box-icon span:before {
 	content: 'i';
+}*/
+
+.b-features-head-list-item-wrapper:hover{
+	background: #4e5670;
 }
 
- .b-features-head-list-item-wrapper:hover{
- 	background: #4e5670;
- }
+.b-features-head-list-item-wrapper:hover .b-features-head-list-item-text h4 {
+	color: #ffffff;
+}
 
- .b-features-head-list-item-wrapper:hover .b-features-head-list-item-text h4 {
- 	color: #ffffff
- }
+.b-features-head-list-item-wrapper:hover .b-features-head-list-item-text p {
+	color: #ffffff;
+}
 
- .b-features-head-list-item-wrapper:hover .b-features-head-list-item-text p {
- 	color: #ffffff
- }
+.b-features-head-list-item-wrapper:hover .b-features-head-list-item-top_box-icon {
+	background-color: #ffffff;
+}
 
- .b-features-head-list-item-wrapper:hover .b-features-head-list-item-top_box-icon {
- 	background: #ffffff
- }
+/*.b-features-head-list-item-wrapper:hover .b-features-head-list-item-top_box-icon span {
+	color: #52a276;
+}*/
 
- .b-features-head-list-item-wrapper:hover .b-features-head-list-item-top_box-icon span {
- 	color: #52a276;
- }
+.b-features-head-list-item-wrapper:hover .b-features-head-list-item-top_box-icon-background--hidden {
+	opacity: 1;
+}
