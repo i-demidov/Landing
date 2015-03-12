@@ -45,6 +45,17 @@
 })();
 
 (function () {
+	/*var $styleBlock = $('<style type="text/css"></style>').appendTo($('head'));;
+
+	$styleBlock.text('.b-slider {height: '+ $(window).height() + 'px;}');*/
+
+	var $slider = $('.js-slider'),
+		$window = $(window);
+
+	$slider.height($window.height());
+})();
+
+(function () {
 	var $window = $(window),
 		$navigation = $('.js-navigation'),
 		$contact = $('.js-contact'),
