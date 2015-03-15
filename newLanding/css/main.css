@@ -381,3 +381,38 @@
 .b-features-head-list-item-wrapper:hover .b-features-head-list-item-top_box-icon-background--hidden {
 	opacity: 1;
 }
+
+/*.b-apply_form {
+	text-align: center;
+}*/
+
+.b-apply_form-input {
+	display: block;
+	float: left;
+	padding: 14px 12px;
+	margin: 0 11px 30px 0;
+	width: 280px;
+	border-radius: 3px;
+	border: 1px solid #dddddd;
+	box-shadow: none;
+	outline: none;
+}
+
+.b-apply_form-input--phone {
+	margin-right: 0;
+}
+
+.b-apply_form-button {
+	background: #4e5670;
+	color: #ffffff;
+	/*font-family: 'Proxima Nova Lt';*/
+	font-size: 20px;
+	line-height: 50px;
+	height: 50px;
+	width: 100%;
+	border: 0 none;
+	padding: 0;
+	margin: 0;
+	border-radius: 3px;
+	text-transform: uppercase;
+}
