@@ -152,6 +152,10 @@
 	background: #52a276;
 }
 
+.b-section--grey {
+	background: #eeeeee;
+}
+
 .b-section-wrapper {
 	position: relative;
 	max-width: 940px;
@@ -414,5 +418,58 @@
 	padding: 0;
 	margin: 0;
 	border-radius: 3px;
+	text-transform: uppercase;
+}
+
+.b-about_us {
+	position: relative;
+}
+
+.b-about_us:before {
+	position: absolute;
+	top: -53px;
+	left: 50%;
+	margin-left: -25px;
+	width: 49px;
+	height: 49px;
+	background: url(../images/logo-emblem.png);
+	content: '';
+}
+
+.b-about_us-title {
+	color: #217978;
+	/*font-family: 'Proxima Nova Th';*/
+	font-size: 35px;
+	line-height: 42px;
+	margin: 52px 0 14px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.b-about_us-text {
+	padding-top: 40px;
+	color: #525252;
+	background: url(../images/title-below_2.png) no-repeat 50% 0;
+  	background-size: contain;
+}
+
+.b-about_us-text p {
+	/*font-smooth: always;
+	font-family: 'Proxima Nova Lt';*/
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 20px;
+	margin: 0;
+	text-align: center;
+}
+
+.b-about_us-text h4 {
+	color: #000;
+	/*font-family: 'Proxima Nova Rg';*/
+	font-size: 20px;
+	font-weight: normal;
+	line-height: 24px;
+	margin: 27px 0 21px;
+	text-align: center;
 	text-transform: uppercase;
 }
