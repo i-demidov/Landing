@@ -27,6 +27,20 @@ body.helvetica,
 	font-family: Helvetica, Arial, sans-serif;
 }
 
+body.open_sans,
+.open_sans input,
+.open_sans textarea, 
+.open_sans p {
+	font-family: 'Open Sans', Arial, sans-serif;
+}
+
+body.google_open_sans,
+.google_open_sans input,
+.google_open_sans textarea, 
+.google_open_sans p {
+	font-family: 'Open Sans Rg', Arial, sans-serif;
+}
+
 a, a:link, a:visited, a:hover, a:active, a:focus {
 	color: #0067bd;
 }

@@ -182,6 +182,15 @@
 	font-family: Helvetica, Arial, sans-serif;
 }
 
+.open_sans .b-welcome-head {
+	font-family: 'Open Sans';
+	font-weight: lighter;
+}
+
+.google_open_sans .b-welcome-head {
+	font-family: 'Open Sans Lt';
+}
+
 .b-welcome-head--sub {
 	font-size: 22px;/*24px;*/
 	line-height: 29px;
@@ -190,8 +199,13 @@
 	font-family: 'Proxima Nova Rg';
 }
 
-.helvetica .b-welcome-head--sub {
+.helvetica .b-welcome-head--sub,
+.open_sans .b-welcome-head--sub {
+	font-weight: normal;
+}
 
+.google_open_sans .b-welcome-head--sub {
+	font-family: 'Open Sans Rg';
 }
 
 .b-features {
@@ -219,6 +233,15 @@
 
 .helvetica .b-features-head {
 	font-family: Helvetica, Arial, sans-serif;
+}
+
+.open_sans .b-features-head {
+	font-family: 'Open Sans';
+	font-weight: lighter;
+}
+
+.google_open_sans .b-features-head {
+	font-family: 'Open Sans Lt';
 }
 
 .b-features-head-list {
@@ -434,6 +457,15 @@
 	font-family: Helvetica, Arial, sans-serif;
 }
 
+.open_sans .b-apply_form-button {
+	font-family: 'Open Sans';
+	font-weight: lighter;
+}
+
+.google_open_sans .b-apply_form-button {
+	font-family: 'Open Sans Lt';
+}
+
 .b-about_us {
 	position: relative;
 }
@@ -463,6 +495,15 @@
 	font-family: Helvetica, Arial, sans-serif;
 }
 
+.open_sans .b-about_us-title {
+	font-family: 'Open Sans';
+	font-weight: bold;
+}
+
+.google_open_sans .b-about_us-title {
+	font-family: 'Open Sans Bl';
+}
+
 .b-about_us-text {
 	padding-top: 40px;
 	color: #525252;
@@ -482,6 +523,15 @@
 
 .helvetica .b-about_us-text p {
 	font-family: Helvetica, Arial, sans-serif;
+}
+
+.open_sans .b-about_us-text p {
+	font-family: 'Open Sans';
+	font-weight: lighter;
+}
+
+.google_open_sans .b-about_us-text p {
+	font-family: 'Open Sans Lt';
 }
 
 .b-about_us-text h4 {

@@ -26,6 +26,42 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'Open Sans';
+	src:url('../fonts/OpenSans.ttf');
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Open Sans Rg';
+	src:url('../fonts/Open Sans/OpenSans-Regular.ttf');
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Open Sans Lt';
+	src:url('../fonts/Open Sans/OpenSans-Light.ttf');
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Open Sans SemiBl';
+	src:url('../fonts/Open Sans/OpenSans-Semibold.ttf');
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Open Sans Bl';
+	src:url('../fonts/Open Sans/OpenSans-Bold.ttf');
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Open Sans ExtraBl';
+	src:url('../fonts/Open Sans/OpenSans-ExtraBold.ttf');
+	font-style: normal;
+}
+
 /*@font-face {
 	font-family: '1';
 	src:url('../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Bold.otf');
