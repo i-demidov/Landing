@@ -20,6 +20,13 @@ body, input, textarea, p {
 	font-family: 'Proxima Nova Rg', Helvetica, Arial, sans-serif;
 }
 
+body.helvetica,
+.helvetica input,
+.helvetica textarea, 
+.helvetica p {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
 a, a:link, a:visited, a:hover, a:active, a:focus {
 	color: #0067bd;
 }

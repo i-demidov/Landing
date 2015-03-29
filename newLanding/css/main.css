@@ -178,12 +178,20 @@
 	text-transform: uppercase;
 }
 
+.helvetica .b-welcome-head {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
 .b-welcome-head--sub {
 	font-size: 22px;/*24px;*/
 	line-height: 29px;
 	margin-top: 0;
 	margin-bottom: 35px;
 	font-family: 'Proxima Nova Rg';
+}
+
+.helvetica .b-welcome-head--sub {
+
 }
 
 .b-features {
@@ -207,6 +215,10 @@
 	margin: 0 0 10px;
 	text-align: center;
 	text-transform: uppercase;
+}
+
+.helvetica .b-features-head {
+	font-family: Helvetica, Arial, sans-serif;
 }
 
 .b-features-head-list {
@@ -418,6 +430,10 @@
 	text-transform: uppercase;
 }
 
+.helvetica .b-apply_form-button {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
 .b-about_us {
 	position: relative;
 }
@@ -443,6 +459,10 @@
 	text-align: center;
 }
 
+.helvetica .b-about_us-title {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
 .b-about_us-text {
 	padding-top: 40px;
 	color: #525252;
@@ -460,6 +480,10 @@
 	text-align: center;
 }
 
+.helvetica .b-about_us-text p {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
 .b-about_us-text h4 {
 	color: #000;
 	font-size: 20px;
@@ -468,4 +492,11 @@
 	margin: 27px 0 21px;
 	text-align: center;
 	text-transform: uppercase;
+}
+
+#font_select {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
 }

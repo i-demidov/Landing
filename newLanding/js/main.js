@@ -80,3 +80,18 @@
 
 	fixNavigationBlock();
 })();
+
+(function () {
+	var $body = $('body'),
+		$fontSelect = $('#font_select');
+
+	$fontSelect.on('change', function () {
+		var fontClass = $fontSelect.val();
+
+		$body.removeAttr('class');
+
+		if (fontClass) {
+			$body.addClass(fontClass);
+		}
+	})
+})();
