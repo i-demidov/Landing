@@ -127,7 +127,6 @@
 
 .b-navigation-list-item a {
 	color: #ffffff;
-	font-family: 'Proxima Nova Rg', Arial, Helvetica, sans-serif;
 	font-size: 14px;
 	line-height: 16px;
 	text-transform: uppercase;
@@ -172,19 +171,19 @@
 	margin: 0 0 30px;
 	color: #ffffff;
 	display: inline-block;
-	font-family: 'Proxima Nova Lt', Arial, Helvetica, sans-serif;
-	font-size: 40px;
+	font-family: 'Proxima Nova Lt';
+	font-size: 38px;/*40px;*/
 	line-height: 48px;
 	font-weight: normal;
 	text-transform: uppercase;
 }
 
 .b-welcome-head--sub {
-	font-family: 'Proxima Nova Rg', Arial, Helvetica, sans-serif;
-	font-size: 24px;
+	font-size: 22px;/*24px;*/
 	line-height: 29px;
 	margin-top: 0;
 	margin-bottom: 35px;
+	font-family: 'Proxima Nova Rg';
 }
 
 .b-features {
@@ -201,7 +200,7 @@
 
 .b-features-head {
 	color: #ffffff;
-	font-family: 'Proxima Nova Lt', Arial, Helvetica, sans-serif;
+	font-family: 'Proxima Nova Lt';
 	font-size: 14px;
 	/*font-weight: bold;*/
 	line-height: 20px;
@@ -250,7 +249,6 @@
 
 .b-features-head-list-item-text h4 {
 	color: #52a276;
-	font-family: 'Proxima Nova Rg', Arial, Helvetica, sans-serif;
 	font-size: 16px;
 	line-height: 20px;
 	font-weight: normal;
@@ -262,7 +260,6 @@
 
 .b-features-head-list-item-text p {
 	color: #545454;
-	font-family: 'Proxima Nova Rg', Arial, Helvetica, sans-serif;
 	font-size: 14px;
 	line-height: 20px;
 	font-weight: normal;
@@ -409,7 +406,7 @@
 .b-apply_form-button {
 	background: #4e5670;
 	color: #ffffff;
-	/*font-family: 'Proxima Nova Lt';*/
+	font-family: 'Proxima Nova Lt';
 	font-size: 20px;
 	line-height: 50px;
 	height: 50px;
@@ -438,8 +435,8 @@
 
 .b-about_us-title {
 	color: #217978;
-	/*font-family: 'Proxima Nova Th';*/
-	font-size: 35px;
+	font-family: 'Proxima Nova Th';
+	font-size: 34px;
 	line-height: 42px;
 	margin: 52px 0 14px;
 	text-transform: uppercase;
@@ -454,8 +451,8 @@
 }
 
 .b-about_us-text p {
-	/*font-smooth: always;
-	font-family: 'Proxima Nova Lt';*/
+	/*font-smooth: always;*/
+	font-family: 'Proxima Nova Lt';
 	font-size: 16px;
 	font-weight: normal;
 	line-height: 20px;
@@ -465,7 +462,6 @@
 
 .b-about_us-text h4 {
 	color: #000;
-	/*font-family: 'Proxima Nova Rg';*/
 	font-size: 20px;
 	font-weight: normal;
 	line-height: 24px;
