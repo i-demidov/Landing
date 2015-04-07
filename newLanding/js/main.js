@@ -81,7 +81,7 @@
 	fixNavigationBlock();
 })();
 
-(function () {
+/*(function () {
 	var $body = $('body'),
 		$fontSelect = $('#font_select');
 
@@ -94,4 +94,4 @@
 			$body.addClass(fontClass);
 		}
 	})
-})();
+})();*/
