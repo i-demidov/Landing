@@ -155,6 +155,10 @@
 	background: #eeeeee;
 }
 
+.b-section--statistic {
+	padding: 0;
+}
+
 .b-section-wrapper {
 	position: relative;
 	max-width: 940px;
@@ -542,6 +546,44 @@
 	margin: 27px 0 21px;
 	text-align: center;
 	text-transform: uppercase;
+}
+
+.b-statistic {
+	margin: 0;
+	padding: 0;
+	text-align: justify;
+	font-family: 'Open Sans ExtraBl';
+}
+
+.b-statistic:after,
+.b-statistic:before {
+	content: '';
+	display: inline-block;
+	width: 100%;
+	height: 0;
+	visibility: hidden;
+	overflow: hidden;
+}
+
+.b-statistic li,
+.b-statistic li span {
+	  display: inline-block;
+}
+
+.b-statistic-more {
+	margin-right: 20px;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+.b-statistic-num {
+	margin-right: 15px;
+	font-size: 60px;
+	line-height: 1;
+}
+
+.b-statistic-cont {
+	font-family: 'Open Sans Rg';
 }
 
 #font_select {
