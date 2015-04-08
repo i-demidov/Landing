@@ -538,7 +538,8 @@
 	font-family: 'Open Sans Rg';
 }
 
-.b-about_us-text h4 {
+.b-about_us-text h4,
+.b-how_we_work h4 {
 	color: #000;
 	font-size: 20px;
 	font-weight: normal;
@@ -591,4 +592,149 @@
 	top: 0;
 	left: 0;
 	z-index: 9999;
+}
+
+.b-how_we_work h4 {
+	margin-top: 0;
+}
+
+.b-how_we_work-process_list {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+.b-how_we_work-process_list-item {
+	float: left;
+	list-style-type: none;
+	width: 300px;
+	margin-top: 43px;
+	margin-right: 20px;
+	margin-bottom: 40px;
+}
+
+.b-how_we_work-process_list-item-box {
+	width: 300px;
+	height: auto;
+	position: relative;
+	z-index: 2;
+}
+
+.b-how_we_work-process_list-item-box-polygon {
+	position: relative;
+	height: 126px;
+	width: 44px;
+	float: left;
+	margin-right: 18px;
+	margin-left: 22px;
+	background: #4e5670;
+	z-index: 3;
+}
+
+.b-how_we_work-process_list-item-box-polygon:before,
+.b-how_we_work-process_list-item-box-polygon:after {
+	position: absolute;
+	content: '';
+	height: 0;
+	top: 0;
+	left: -22px;
+	width: 0px;
+	border-right: 22px solid #4e5670;
+	border-top: 0px solid transparent;
+	border-bottom: 126px solid transparent;
+	z-index: 3;
+}
+
+.b-how_we_work-process_list-item-box-polygon-ps_circle {
+	position: absolute;
+	top: 27px;
+	left: -18px;
+	background: #ffffff;
+	height: 70px;
+	width: 70px;
+	border-radius: 50%;
+	z-index: 4;
+}
+
+.b-how_we_work-process_list-item-box-polygon-ps_circle-text {
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
+.b-how_we_work-process_list-item-box-polygon-ps_circle-text .step {
+	color: #60698a;
+	display: block;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 16px;
+	margin-top: 10px;
+	text-transform: uppercase;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.b-how_we_work-process_list-item-box-polygon-ps_circle-text .number {
+	color: #60698a;
+	display: block;
+	font-family: 'Open Sans ExtraBl';
+	font-size: 40px;
+	font-weight: normal;
+	line-height: 46px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.b-how_we_work-process_list-item-box-process_desc .icon {
+	display: inline;
+	width: auto;
+	height: auto;
+	/*line-height: normal;*/
+	vertical-align: baseline;
+	background-image: none;
+	background-position: 0% 0%;
+	background-repeat: repeat;
+	margin-top: 0;
+	font-size: 40px;
+	line-height: 46px;
+	color: #4e5670;
+}
+
+.b-how_we_work-process_list-item-box-process_desc .icon:before {
+	text-decoration: inherit;
+	display: inline-block;
+	speak: none;
+}
+
+.b-how_we_work-process_list-item-box-process_desc .icon:before {
+	content: "\f0e8";
+}
+
+.b-how_we_work-process_list-item-box-process_desc h5 {
+	color: #000;
+	font-family: 'Proxima Nova Rg';
+	font-size: 16px;
+	line-height: 20px;
+	margin: 15px 0 5px;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.b-how_we_work-process_list-item-box-process_desc p {
+	color: #545454;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 20px;
+	margin-bottom: 0;
+}
+
+.b-how_we_work-process_list-item-box-process_arrow {
+	position: absolute;
+	background: url("http://bobrodemon.ru/oldLanding/css/../images/blue-arrow.png") no-repeat 0 0;
+	top: -43px;
+	left: 41px;
+	width: 43px;
+	height: 21px;
+	z-index: 3;
+	text-indent: -9999px;
 }
