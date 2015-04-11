@@ -613,6 +613,10 @@
 	margin-bottom: 40px;
 }
 
+.b-how_we_work-process_list-item:last-child {
+	margin-right: 0;
+}
+
 .b-how_we_work-process_list-item-box {
 	width: 300px;
 	height: auto;
@@ -631,6 +635,10 @@
 	z-index: 3;
 }
 
+.b-how_we_work-process_list-item-box:hover .b-how_we_work-process_list-item-box-polygon {
+	background: #52a276;
+}
+
 .b-how_we_work-process_list-item-box-polygon:before,
 .b-how_we_work-process_list-item-box-polygon:after {
 	position: absolute;
@@ -643,6 +651,14 @@
 	border-top: 0px solid transparent;
 	border-bottom: 126px solid transparent;
 	z-index: 3;
+}
+
+.b-how_we_work-process_list-item-box:hover  .b-how_we_work-process_list-item-box-polygon:after{
+	border-right-color: #52a276;
+}
+
+.b-how_we_work-process_list-item-box:hover  .b-how_we_work-process_list-item-box-polygon:before{
+	border-right-color: #52a276;
 }
 
 .b-how_we_work-process_list-item-box-polygon-ps_circle {
@@ -698,6 +714,17 @@
 	font-size: 40px;
 	line-height: 46px;
 	color: #4e5670;
+	font-family: FontAwesome;
+  	font-weight: normal;
+	font-style: normal;
+	text-decoration: inherit;
+	-webkit-font-smoothing: antialiased;
+}
+
+.b-how_we_work-process_list-item-box:hover .b-how_we_work-process_list-item-box-polygon-ps_circle-text .step,
+.b-how_we_work-process_list-item-box:hover .b-how_we_work-process_list-item-box-polygon-ps_circle-text .number,
+.b-how_we_work-process_list-item-box:hover .b-how_we_work-process_list-item-box-process_desc .icon {
+	color: #52a276;
 }
 
 .b-how_we_work-process_list-item-box-process_desc .icon:before {
@@ -706,8 +733,26 @@
 	speak: none;
 }
 
-.b-how_we_work-process_list-item-box-process_desc .icon:before {
+.b-how_we_work-process_list-item-box-process_desc .icon--sitemap:before {
 	content: "\f0e8";
+}
+
+.b-how_we_work-process_list-item-box-process_desc .icon--certificate {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background-image: url(../images/certificat--purple.png);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.b-how_we_work-process_list-item-box:hover .b-how_we_work-process_list-item-box-process_desc .icon--certificate {
+	background-image: url(../images/certificat--green.png);
+}
+
+.b-how_we_work-process_list-item-box-process_desc .icon--hand:before {
+	content: "\f0a4";
 }
 
 .b-how_we_work-process_list-item-box-process_desc h5 {
@@ -725,7 +770,7 @@
 	font-size: 14px;
 	font-weight: normal;
 	line-height: 20px;
-	margin-bottom: 0;
+	margin: 0;
 }
 
 .b-how_we_work-process_list-item-box-process_arrow {
@@ -737,4 +782,8 @@
 	height: 21px;
 	z-index: 3;
 	text-indent: -9999px;
+}
+
+.b-how_we_work-process_list-item-box:hover .b-how_we_work-process_list-item-box-process_arrow {
+	background: url("http://bobrodemon.ru/oldLanding/css/../images/red-arrow.png") no-repeat 0 0;
 }
