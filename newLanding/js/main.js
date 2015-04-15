@@ -81,6 +81,17 @@
 	fixNavigationBlock();
 })();
 
+(function () {
+	var $servicesListItems = $('.js-services-list-item'),
+		activeItemClass = 'b-services-list-item--active';
+
+	$servicesListItems.on('click', function (e) {
+		$servicesListItems.removeClass(activeItemClass);
+
+		$(e.currentTarget).addClass(activeItemClass);
+	});
+})();
+
 /*(function () {
 	var $body = $('body'),
 		$fontSelect = $('#font_select');

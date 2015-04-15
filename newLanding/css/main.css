@@ -539,7 +539,8 @@
 }
 
 .b-about_us-text h4,
-.b-how_we_work h4 {
+.b-how_we_work h4,
+.b-services h4 {
 	color: #000;
 	font-size: 20px;
 	font-weight: normal;
@@ -594,7 +595,8 @@
 	z-index: 9999;
 }
 
-.b-how_we_work h4 {
+.b-how_we_work h4,
+.b-services h4 {
 	margin-top: 0;
 }
 
@@ -786,4 +788,82 @@
 
 .b-how_we_work-process_list-item-box:hover .b-how_we_work-process_list-item-box-process_arrow {
 	background: url("http://bobrodemon.ru/oldLanding/css/../images/red-arrow.png") no-repeat 0 0;
+}
+
+.b-services-col {
+	width: 50%;
+	float: left;
+}
+
+.b-services-list {
+	display: block;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+.b-services-list-item {
+	display: block;
+	padding: 18px;
+	cursor: pointer;
+}
+
+.b-services-list-item:hover,
+.b-services-list-item--active {
+	background: #4e5670;
+}
+
+.b-services-list-item h5 {
+	color: #525252;
+	font-family: 'Proxima Nova Rg';
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 20px;
+	text-transform: uppercase;
+	text-align: left;
+	margin-top: 0px;
+	margin-bottom: 4px;
+}
+
+/*.b-services-list-item p {
+	color: #525252;
+	font-family: 'Proxima Nova Rg';
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 20px;
+	text-align: left;
+	margin: 0;
+}*/
+
+.b-services-sub_list {
+	display: block;
+	margin: 0;
+	padding: 0 0 0 18px;
+	max-height: 0;
+	color: #525252;
+	font-family: 'Proxima Nova Rg';
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 20px;
+	text-align: left;
+	overflow: hidden;
+	list-style-type: square;
+	-webkit-transition: max-height 1s ease-in-out;
+	-moz-transition: max-height 1s ease-in-out;
+	-o-transition: max-height 1s ease-in-out;
+	-ms-transition: max-height 1s ease-in-out;
+	transition: max-height 1s ease-in-out;
+}
+
+.b-services-list-item:hover h5,
+.b-services-list-item--active h5,
+/*.b-services-list-item:hover p,*/
+.b-services-list-item--active .b-services-sub_list,
+.b-services-list-item:hover .b-services-sub_list {
+	color: #fff;
+}
+
+.b-services-list-item:hover .b-services-sub_list,
+.b-services-list-item--active .b-services-sub_list {
+	max-height: 500px;
 }
