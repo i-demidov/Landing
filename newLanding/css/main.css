@@ -360,12 +360,12 @@
 }
 
 .b-features-head-list-item-top_box-icon-background--vip {
-	background-image: url(../images/certificat--light.png);
-	background-size: 65%;
+	background-image: url(../images/vip--light.png);
+	background-size: 85%;
 }
 
 .b-features-head-list-item-top_box-icon-background--vip.b-features-head-list-item-top_box-icon-background--hidden {
-	background-image: url(../images/certificat--green.png);
+	background-image: url(../images/vip--green.png);
 }
 
 .b-features-head-list-item-top_box-icon-background--control {
