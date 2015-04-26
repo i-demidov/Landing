@@ -874,10 +874,15 @@
 	max-height: 500px;
 }
 
+.b-reviews {
+	position: relative;
+}
+
 .b-reviews-slider {
 	display: block;
 	position: relative;
 	height: 387px;
+	overflow: hidden;
 }
 
 .b-reviews-list {
@@ -899,6 +904,7 @@
 	position: absolute;
 	table-layout: fixed;
 	border-collapse: collapse;
+	transition: left .5s ease-out;
 }
 
 .b-reviews-table td {
@@ -981,4 +987,28 @@
 	text-align: left;
 	height: 140px;
 	overflow-y: auto;
+}
+
+.b-reviews-slider_arrow,
+.b-reviews-slider_arrow:link,
+.b-reviews-slider_arrow:active,
+.b-reviews-slider_arrow:visited,
+.b-reviews-slider_arrow:hover {
+	display: block;
+	position: absolute;
+	top: -4px;
+	left: 0;
+	width: 33px;
+	height: 33px;
+	background: url("http://bobrodemon.ru/oldLanding/images/left-arrow.png") no-repeat 0 0;
+}
+
+.b-reviews-slider_arrow--right,
+.b-reviews-slider_arrow--right:link,
+.b-reviews-slider_arrow--right:active,
+.b-reviews-slider_arrow--right:visited,
+.b-reviews-slider_arrow--right:hover {
+	left: auto;
+	right: 0;
+	background-image: url("http://bobrodemon.ru/oldLanding/images/right-arrow.png");
 }

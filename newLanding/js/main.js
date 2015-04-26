@@ -116,10 +116,18 @@
 		}];
 
 	var $reviewsSlider = $('#reviews-slider'),
-		$sliderTable = $('<table class="b-reviews-table" cellspacing="0" cellpadding="0"><tr></tr></table>'),
-		$sliderTableRow = $sliderTable.find('tr');
+		$sliderTable = $('<table class="b-reviews-table" cellspacing="0" cellpadding="0" style="left: 0;" data-offset="0"><tr></tr></table>'),
+		$sliderTableRow = $sliderTable.find('tr'),
+		$sliderPrevArrow = $('<a class="b-reviews-slider_arrow" href="#">'),
+		$sliderNextArrow = $('<a class="b-reviews-slider_arrow b-reviews-slider_arrow--right" href="#">'),
+		stepOffset = 3*320,
+		tableWidth = 11*320;
 
-	for (var i = 0, max = 3; i < max; i++) {
+	$reviewsSlider
+		.after($sliderPrevArrow)
+		.after($sliderNextArrow);
+
+	for (var i = 0, max = 11; i < max; i++) {
 		var reviewTemplate = '<td>'+
 						   	 	'<div class="b-reviews-company_header">' +
 						     		'<div class="b-reviews-company_header-logo">' +
@@ -134,5 +142,28 @@
 		$sliderTableRow.append($(reviewTemplate));
 	}
 
-	$reviewsSlider.append($sliderTable.css('width', 3*320));
+	$reviewsSlider.append($sliderTable.css('width', tableWidth));
+
+	$sliderPrevArrow.bind('click', slide);
+	$sliderNextArrow.bind('click', slide);
+
+	function slide (e) {
+		var isNextStep = this === $sliderNextArrow[0],
+			currentOffset = parseInt($sliderTable.data('offset'), 10) || 0,
+			newOffset = currentOffset + (isNextStep ? -stepOffset : stepOffset);
+
+
+
+		if (Math.abs(newOffset) > (tableWidth - stepOffset)) {
+			newOffset = Math.abs(newOffset) === tableWidth ? 0 : -(tableWidth - stepOffset);
+		} else if (newOffset > 0) {
+			newOffset = newOffset === stepOffset ? -(tableWidth - stepOffset) : 0;
+		}
+
+		$sliderTable
+			.data('offset', newOffset)
+			.css('left', newOffset);
+
+		return false;
+	}
 })()
