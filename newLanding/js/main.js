@@ -81,7 +81,7 @@
 	fixNavigationBlock();
 })();
 
-(function () {
+/*(function () {
 	var $servicesListItems = $('.js-services-list-item'),
 		activeItemClass = 'b-services-list-item--active';
 
@@ -90,7 +90,7 @@
 
 		$(e.currentTarget).addClass(activeItemClass);
 	});
-})();
+})();*/
 
 /*(function () {
 	var $body = $('body'),
@@ -106,3 +106,33 @@
 		}
 	})
 })();*/
+
+(function () {
+	var reviews = [{
+			name: 'JOHN DOE',
+			secondName: 'Founder at MKTKO & Co.',
+			img: 'images/lukoil logo.jpg',
+			comment: 'comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment comment'
+		}];
+
+	var $reviewsSlider = $('#reviews-slider'),
+		$sliderTable = $('<table class="b-reviews-table" cellspacing="0" cellpadding="0"><tr></tr></table>'),
+		$sliderTableRow = $sliderTable.find('tr');
+
+	for (var i = 0, max = 3; i < max; i++) {
+		var reviewTemplate = '<td>'+
+						   	 	'<div class="b-reviews-company_header">' +
+						     		'<div class="b-reviews-company_header-logo">' +
+						     			'<img src="' + reviews[0].img + '" />' +
+						     		'</div>' +
+                             		'<h5>' + reviews[0].name + '</h5>' +
+                             		'<h6>' + reviews[0].secondName + '</h6>' +
+                             	'</div>' +
+                             	'<div class="b-reviews-company_comment"><p>' + reviews[0].comment + '</p></div>' +
+                             '</td>';
+
+		$sliderTableRow.append($(reviewTemplate));
+	}
+
+	$reviewsSlider.append($sliderTable.css('width', 3*320));
+})()

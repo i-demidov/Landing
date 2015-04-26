@@ -159,6 +159,10 @@
 	padding: 0;
 }
 
+.b-section--apply_form {
+	padding: 16px 0;
+}
+
 .b-section-wrapper {
 	position: relative;
 	max-width: 940px;
@@ -540,7 +544,8 @@
 
 .b-about_us-text h4,
 .b-how_we_work h4,
-.b-services h4 {
+.b-services h4,
+.b-reviews h4 {
 	color: #000;
 	font-size: 20px;
 	font-weight: normal;
@@ -596,7 +601,8 @@
 }
 
 .b-how_we_work h4,
-.b-services h4 {
+.b-services h4,
+.b-reviews h4 {
 	margin-top: 0;
 }
 
@@ -866,4 +872,113 @@
 .b-services-list-item:hover .b-services-sub_list,
 .b-services-list-item--active .b-services-sub_list {
 	max-height: 500px;
+}
+
+.b-reviews-slider {
+	display: block;
+	position: relative;
+	height: 387px;
+}
+
+.b-reviews-list {
+	display: block;
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+.b-reviews-list-item {
+	display: block;
+	float: left;
+	width: 300px;
+	background: pink;
+}
+
+.b-reviews-table {
+	position: absolute;
+	table-layout: fixed;
+	border-collapse: collapse;
+}
+
+.b-reviews-table td {
+	width: 300px;
+	height: 387px;
+	vertical-align: top;
+	border-right: 20px solid #fff;
+	text-align: center;
+}
+
+.b-reviews-company_header {
+	position: relative;
+	padding-top: 30px;
+	height: 169px;
+	background: #fff;
+}
+
+.b-reviews-company_header-logo {
+	display: inline-block;
+	height: 88px;
+	width: 88px;
+	border: 1px solid #e2e2e2;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.b-reviews-company_header-logo img {
+	margin-top: 4px;
+	height: 80px;
+	width: 80px;
+	border-radius: 50%;
+}
+
+.b-reviews-company_header h5 {
+	color: #000;
+	font-family: 'Open Sans SemiBl';
+	font-size: 15px;
+	font-weight: normal;
+	line-height: 20px;
+	text-transform: uppercase;
+	margin-top: 5px;
+	margin-bottom: 2px;
+}
+
+.b-reviews-company_header h6 {
+	color: #dd4321;
+	font-family: 'Open Sans SemiBl';
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 16px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.b-reviews-company_comment {
+	position: relative;
+	padding: 24px 20px;
+	height: 140px;
+	border-radius: 5px;
+	background: #eeeeee;
+}
+
+.b-reviews-company_comment:before {
+	position: absolute;
+	content: '';
+	height: 0;
+	width: 0;
+	top: -13px;
+	left: 135px;
+	border-width: 0 15px 13px;
+	border-style: solid;
+	border-color: transparent transparent #eeeeee;
+	z-index: 5;
+}
+
+.b-reviews-company_comment p {
+	display: block;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	height: 140px;
+	overflow-y: auto;
 }
