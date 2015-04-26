@@ -542,10 +542,7 @@
 	font-family: 'Open Sans Rg';
 }
 
-.b-about_us-text h4,
-.b-how_we_work h4,
-.b-services h4,
-.b-reviews h4 {
+.b-section-header {
 	color: #000;
 	font-size: 20px;
 	font-weight: normal;
@@ -600,9 +597,9 @@
 	z-index: 9999;
 }
 
-.b-how_we_work h4,
-.b-services h4,
-.b-reviews h4 {
+.b-how_we_work .b-section-header,
+.b-services .b-section-header,
+.b-reviews .b-section-header {
 	margin-top: 0;
 }
 
