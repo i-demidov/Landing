@@ -81,16 +81,42 @@
 	fixNavigationBlock();
 })();
 
-/*(function () {
-	var $servicesListItems = $('.js-services-list-item'),
+(function () {
+	var $servicesSubLists = $('.js-services-sub_list'),
+		$servicesListItems = $('.js-services-list-item');
+
+	$servicesSubLists.each(function (i, list) {
+		var $list = $(list);
+
+		$list
+			.data('height', $list.height())
+			.addClass('b-services-sub_list--openable')
+			.closest('.js-services-list-item')
+			.data('sublist', $list);
+	});
+
+	$servicesListItems
+		.bind('mouseenter', function (e) {
+			var $sublist = $(e.currentTarget).data('sublist');
+
+			$sublist && $sublist.css('height', $sublist.data('height'));
+		})
+		.bind('mouseleave', function (e) {
+			setTimeout(function () {
+				var $sublist = $(e.currentTarget).data('sublist');
+
+				$sublist && $sublist.removeAttr('style');
+			}, 500);
+		});
+	/*var $servicesListItems = $('.js-services-list-item'),
 		activeItemClass = 'b-services-list-item--active';
 
 	$servicesListItems.on('click', function (e) {
 		$servicesListItems.removeClass(activeItemClass);
 
 		$(e.currentTarget).addClass(activeItemClass);
-	});
-})();*/
+	});*/
+})();
 
 /*(function () {
 	var $body = $('body'),

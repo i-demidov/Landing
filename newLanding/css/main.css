@@ -845,7 +845,7 @@
 	display: block;
 	margin: 0;
 	padding: 0 0 0 18px;
-	max-height: 0;
+	/*max-height: 0;*/
 	color: #525252;
 	font-family: 'Proxima Nova Rg';
 	font-size: 14px;
@@ -854,11 +854,20 @@
 	text-align: left;
 	overflow: hidden;
 	list-style-type: square;
-	-webkit-transition: max-height 1s ease-in-out;
+	/*-webkit-transition: max-height 1s ease-in-out;
 	-moz-transition: max-height 1s ease-in-out;
 	-o-transition: max-height 1s ease-in-out;
 	-ms-transition: max-height 1s ease-in-out;
-	transition: max-height 1s ease-in-out;
+	transition: max-height 1s ease-in-out;*/
+}
+
+.b-services-sub_list--openable {
+	height: 0;
+	-webkit-transition: height .5s ease-in-out;
+	-moz-transition: height .5s ease-in-out;
+	-o-transition: height .5s ease-in-out;
+	-ms-transition: height .5s ease-in-out;
+	transition: height .5s ease-in-out;
 }
 
 .b-services-list-item:hover h5,
@@ -871,7 +880,7 @@
 
 .b-services-list-item:hover .b-services-sub_list,
 .b-services-list-item--active .b-services-sub_list {
-	max-height: 500px;
+	/*max-height: 500px;*/
 }
 
 .b-reviews {
