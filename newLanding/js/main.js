@@ -18,7 +18,7 @@
 	};
 })());*/
 
-(function () {
+/*(function () {
 	var backgroundIndex = 2;
 
 	function changeBackground () {
@@ -42,17 +42,17 @@
 	}
 
 	setTimeout(changeBackground, 5000);
-})();
+})();*/
 
 (function () {
 	/*var $styleBlock = $('<style type="text/css"></style>').appendTo($('head'));;
 
 	$styleBlock.text('.b-slider {height: '+ $(window).height() + 'px;}');*/
 
-	var $slider = $('.js-slider'),
+	/*var $slider = $('.js-slider'),
 		$window = $(window);
 
-	$slider.height($window.height());
+	$slider.height($window.height());*/
 })();
 
 (function () {

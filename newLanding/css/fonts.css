@@ -62,6 +62,18 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'Parcsis';
+	src:url('../fonts/jobparcsisorg-webfont.woff');
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Parcsis Bl';
+	src:url('../fonts/jobparcsisorgbold-webfont.woff');
+	font-style: normal;
+}
+
 /*@font-face {
 	font-family: '1';
 	src:url('../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Bold.otf');

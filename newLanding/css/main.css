@@ -9,11 +9,9 @@
 	overflow-x: hidden;*/
 }
 
-.b-slider {
+/*.b-slider {
 	position: relative;
 	height: 768px;
-	/*background: url('../images/50-Low-Poly-Backgrounds/p1.jpg') 50% 0 no-repeat;
-	background-size: cover;*/
 }
 
 .b-slider-background {
@@ -23,6 +21,109 @@
 	right: 0;
 	bottom: 0;
 	left: 0;
+}*/
+
+.b-slider {
+	position: relative;
+	height: 570px;
+	overflow: hidden;
+}
+
+.b-slider-container {
+	position: relative;
+	height: 100%;
+	width: 400%;
+}
+
+.b-slider-item {
+	position: relative;
+	height: 100%;
+	width: 25%;
+	float: left;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-y: 50%;
+}
+
+.b-slider-item-wrapper {
+	position: relative;
+	margin: 0 auto;
+	width: 960px;
+	height: 100%;
+}
+
+.b-slider-item-image {
+	position: absolute;
+	top: 26px;
+	width: 480px;
+	height: 480px;
+	border-radius: 50%;
+	overflow: hidden;
+	/*box-shadow: 0 0px 6px 2px rgba(0, 0, 0, .2);*/
+}
+
+.b-slider-item-image img {
+	width: 480px;
+	height: 480px;
+}
+
+.b-slider-item-text {
+	position: absolute;
+	top: 26px;
+	right: 0;
+	width: 420px;
+	height: 480px;
+	text-align: center;
+	font-family: 'Parcsis', Impact, sans-serif;
+	color: #fff;
+	text-shadow: 1px 1px 0 #1b354b;
+}
+
+.b-slider-item-text-title {
+	position: relative;
+	margin: 5px 0;
+	padding: 5px 0;
+	font-family: 'Parcsis Bl', Impact, sans-serif;
+	font-size: 52px;
+	line-height: 41px;
+}
+
+.b-slider-item-text-title:before,
+.b-slider-item-text-title:after {
+	width: 100%;
+	height: 5px;
+	left: 0;
+	position: absolute;
+	font-size: 0;
+	box-shadow: 1px 1px 0 #1d3a4f;
+	-moz-box-shadow: 1px 1px 0 #1d3a4f;
+	-webkit-box-shadow: 1px 1px 0 #1d3a4f;
+	background: #fff;
+	content: '';
+}
+
+.b-slider-item-text-title:before {
+	top: -5px;
+}
+
+.b-slider-item-text-title:after {
+	bottom: -5px;
+}
+
+.b-slider-item-text-before_title {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 30px;
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.b-slider-item-text .b-slider-item-text-description {
+	margin: 15px 0 0;
+	width: 100%;
+	font-size: 18px;
+	font-family: 'Parcsis', Impact, sans-serif;
 }
 
 .b-contact {
