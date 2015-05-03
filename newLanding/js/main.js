@@ -45,6 +45,125 @@
 })();*/
 
 (function () {
+	var actions = [{
+			img: 'images/1.png',
+			backgroundImg: 'images/50-Low-Poly-Backgrounds/p6.jpg',
+			title: 'wat wat wat wat wat wat wat wat wat',
+			beforeTitle: '1',
+			description: 'wat wat wat wat wat wat wat wat wat'
+		}, {
+			img: 'images/2.png',
+			backgroundImg: 'images/50-Low-Poly-Backgrounds/p10.jpg',
+			title: 'wat wat wat wat wat wat wat wat wat',
+			beforeTitle: '2',
+			description: 'wat wat wat wat wat wat wat wat wat'
+		}, {
+			img: 'images/3.png',
+			backgroundImg: 'images/50-Low-Poly-Backgrounds/p14.jpg',
+			title: 'wat wat wat wat wat wat wat wat wat',
+			beforeTitle: '3',
+			description: 'wat wat wat wat wat wat wat wat wat'
+		}, {
+			img: 'images/4.png',
+			backgroundImg: 'images/50-Low-Poly-Backgrounds/p18.jpg',
+			title: 'wat wat wat wat wat wat wat wat wat',
+			beforeTitle: '4',
+			description: 'wat wat wat wat wat wat wat wat wat'
+		}, {
+			img: 'images/5.png',
+			backgroundImg: 'images/50-Low-Poly-Backgrounds/p22.jpg',
+			title: 'wat wat wat wat wat wat wat wat wat',
+			beforeTitle: '5',
+			description: 'wat wat wat wat wat wat wat wat wat'
+		}, {
+			img: 'images/6.png',
+			backgroundImg: 'images/50-Low-Poly-Backgrounds/p26.jpg',
+			title: 'wat wat wat wat wat wat wat wat wat',
+			beforeTitle: '6',
+			description: 'wat wat wat wat wat wat wat wat wat'
+		}];
+
+	actions.push(actions[0]);
+
+	var $slider = $('#slider'),
+		$sliderContainer = $('<div class="b-slider-container">'),
+		$sliderToggler = $('<div class="b-slider-toggler">'),
+		$leftArow = $('<a href="#" class="b-slider-toggler-arrow b-slider-toggler-arrow--left">'),
+		$rightArow = $('<a href="#" class="b-slider-toggler-arrow b-slider-toggler-arrow--right">'),
+		slidesLength = actions.length,
+		sliderContainerWidth = slidesLength*100;
+
+		for (var i = 0, max = slidesLength; i < max; i++) {
+			var sliderItemTemplate = '<div class="b-slider-item" style="background-image: url(' + actions[i].backgroundImg + ')">' +
+									 	'<div class="b-slider-item-wrapper">' +
+									 		'<div class="b-slider-item-image">' +
+												'<img src="' + actions[i].img + '" />' +
+											'</div>' +
+											'<div class="b-slider-item-text">' +
+												'<h3 class="b-slider-item-text-before_title">' + actions[i].beforeTitle + '</h3>' +
+												'<h2 class="b-slider-item-text-title">' +  actions[i].title + '</h2>' +
+												'<p class="b-slider-item-text-description">' + actions[i].description + '</p>' +
+												'<a href="Прайс.docx" class="b-slider-item-text-price">Прайс-лист</a>'
+											'</div>' +
+									 	'</div>' +
+									 '</div>';
+
+			$sliderContainer.append($(sliderItemTemplate).css('width', 100/slidesLength + '%'));
+		}
+
+
+		$sliderToggler
+			.append($leftArow.bind('click', slide))
+			.append($rightArow.bind('click', slide));
+
+		$sliderContainer
+			.css({
+				width: sliderContainerWidth + '%',
+				marginLeft: '0%'
+			})
+			.data('offset', '0%');
+
+		$slider
+			.append($sliderToggler)
+			.append($sliderContainer);
+
+		function slide (e) {
+			var isNextStep = e && ($(e.currentTarget)[0] === $rightArow[0]),
+				currentOffset =  parseInt($sliderContainer.data('offset'), 10),
+				stepSize = 100,
+				lastNextOffset = sliderContainerWidth - stepSize;
+
+			if (isNextStep) {
+				if (Math.abs(currentOffset) === lastNextOffset) {
+					$sliderContainer
+						.data('offset', '0%')
+						.css('margin-left', '0%');
+				}
+			} else {
+				if (!currentOffset) {
+					$sliderContainer
+						.data('offset', -lastNextOffset + '%')
+						.css('margin-left', -lastNextOffset + '%');
+				}
+			}
+
+			$sliderContainer.stop();
+
+			var newOffset = parseInt($sliderContainer.data('offset'), 10) + (isNextStep ? -stepSize : stepSize);
+
+			$sliderContainer
+				.css('margin-left', $sliderContainer.data('offset'))
+				.data('offset', newOffset + '%');
+
+			$sliderContainer.animate({
+				marginLeft: newOffset + '%'
+			}, 500);
+
+			return false;
+		}; 
+})();
+
+(function () {
 	/*var $styleBlock = $('<style type="text/css"></style>').appendTo($('head'));;
 
 	$styleBlock.text('.b-slider {height: '+ $(window).height() + 'px;}');*/
