@@ -91,7 +91,8 @@
 		$leftArow = $('<a href="#" class="b-slider-toggler-arrow b-slider-toggler-arrow--left">'),
 		$rightArow = $('<a href="#" class="b-slider-toggler-arrow b-slider-toggler-arrow--right">'),
 		slidesLength = actions.length,
-		sliderContainerWidth = slidesLength*100;
+		sliderContainerWidth = slidesLength*100,
+		autoSlideId;
 
 		for (var i = 0, max = slidesLength; i < max; i++) {
 			var sliderItemTemplate = '<div class="b-slider-item" style="background-image: url(' + actions[i].backgroundImg + ')">' +
@@ -128,7 +129,9 @@
 			.append($sliderContainer);
 
 		function slide (e) {
-			var isNextStep = e && ($(e.currentTarget)[0] === $rightArow[0]),
+			clearTimeout(autoSlideId);
+
+			var isNextStep = !e || ($(e.currentTarget)[0] === $rightArow[0]),
 				currentOffset =  parseInt($sliderContainer.data('offset'), 10),
 				stepSize = 100,
 				lastNextOffset = sliderContainerWidth - stepSize;
@@ -157,10 +160,19 @@
 
 			$sliderContainer.animate({
 				marginLeft: newOffset + '%'
-			}, 500);
+			}, {
+				duaration: 500,
+				complete: autoSlide
+			});
 
 			return false;
-		}; 
+		}
+
+		function autoSlide () {
+			autoSlideId = setTimeout(slide, 10000);
+		}
+
+		autoSlide();
 })();
 
 (function () {
