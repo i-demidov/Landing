@@ -968,12 +968,17 @@
 	cursor: pointer;
 }
 
-.b-services-list-item:hover,
+.b-services-list-item--openable h5 {
+	border-bottom: 2px dashed #525252;
+}
+
+/*.b-services-list-item:hover,*/
 .b-services-list-item--active {
 	background: #4e5670;
 }
 
 .b-services-list-item h5 {
+	display: inline-block;
 	color: #525252;
 	font-family: 'Proxima Nova Rg';
 	font-size: 16px;
@@ -1024,12 +1029,16 @@
 	transition: height .5s ease-in-out;
 }
 
-.b-services-list-item:hover h5,
+/*.b-services-list-item:hover h5,*/
 .b-services-list-item--active h5,
 /*.b-services-list-item:hover p,*/
-.b-services-list-item--active .b-services-sub_list,
-.b-services-list-item:hover .b-services-sub_list {
+.b-services-list-item--active .b-services-sub_list/*,
+.b-services-list-item:hover .b-services-sub_list*/ {
 	color: #fff;
+}
+
+.b-services-list-item--active h5 {
+	border-color: #fff;
 }
 
 .b-services-list-item:hover .b-services-sub_list,

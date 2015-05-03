@@ -223,22 +223,41 @@
 			.data('height', $list.height())
 			.addClass('b-services-sub_list--openable')
 			.closest('.js-services-list-item')
-			.data('sublist', $list);
+			.data('sublist', $list)
+			.addClass('b-services-list-item--openable');
 	});
 
 	$servicesListItems
-		.bind('mouseenter', function (e) {
-			var $sublist = $(e.currentTarget).data('sublist');
+		.bind('click', function (e) {
+			var $item = $(e.currentTarget),
+				$sublist = $item.data('sublist'),
+				activeItemClas = 'b-services-list-item--active',
+				isOpenedItem = $item.hasClass(activeItemClas);
 
-			$sublist && $sublist.css('height', $sublist.data('height'));
-		})
-		.bind('mouseleave', function (e) {
+			$servicesListItems.each(function (i, item) {
+				var $item = $(item),
+					$sublist = $item.data('sublist');
+
+				if ($sublist) {
+					$item.removeClass(activeItemClas);
+					$sublist.removeAttr('style');
+				}
+			});
+
+			if ($sublist && !isOpenedItem) {
+				$item.addClass(activeItemClas);
+
+				$sublist.css('height', $sublist.data('height'));
+			}
+			
+		});
+		/*.bind('mouseleave', function (e) {
 			setTimeout(function () {
 				var $sublist = $(e.currentTarget).data('sublist');
 
 				$sublist && $sublist.removeAttr('style');
 			}, 500);
-		});
+		});*/
 	/*var $servicesListItems = $('.js-services-list-item'),
 		activeItemClass = 'b-services-list-item--active';
 
