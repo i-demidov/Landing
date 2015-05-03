@@ -104,7 +104,7 @@
 												'<h3 class="b-slider-item-text-before_title">' + actions[i].beforeTitle + '</h3>' +
 												'<h2 class="b-slider-item-text-title">' +  actions[i].title + '</h2>' +
 												'<p class="b-slider-item-text-description">' + actions[i].description + '</p>' +
-												'<a href="Прайс.docx" class="b-slider-item-text-price">Прайс-лист</a>'
+												'<a href="Price.docx" class="b-slider-item-text-price">Прайс-лист</a>'
 											'</div>' +
 									 	'</div>' +
 									 '</div>';
