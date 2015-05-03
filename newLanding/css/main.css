@@ -965,11 +965,11 @@
 .b-services-list-item {
 	display: block;
 	padding: 18px;
-	cursor: pointer;
 }
 
 .b-services-list-item--openable h5 {
 	border-bottom: 2px dashed #525252;
+	cursor: pointer;
 }
 
 /*.b-services-list-item:hover,*/
