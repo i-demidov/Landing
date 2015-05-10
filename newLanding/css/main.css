@@ -1087,11 +1087,19 @@
 	text-align: center;
 }
 
+.b-section--grey .b-reviews-table td {
+	border-color: #eeeeee;
+}
+
 .b-reviews-company_header {
 	position: relative;
 	padding-top: 30px;
 	height: 169px;
 	background: #fff;
+}
+
+.b-section--grey .b-reviews-company_header {
+	background: #eeeeee;
 }
 
 .b-reviews-company_header-logo {
@@ -1139,6 +1147,10 @@
 	background: #eeeeee;
 }
 
+.b-section--grey .b-reviews-company_comment {
+	background: #fff;
+}
+
 .b-reviews-company_comment:before {
 	position: absolute;
 	content: '';
@@ -1150,6 +1162,10 @@
 	border-style: solid;
 	border-color: transparent transparent #eeeeee;
 	z-index: 5;
+}
+
+.b-section--grey .b-reviews-company_comment:before {
+	border-color: transparent transparent #fff;
 }
 
 .b-reviews-company_comment p {
