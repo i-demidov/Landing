@@ -619,6 +619,7 @@
 	margin: 0;
 	border-radius: 3px;
 	text-transform: uppercase;
+	outline: none;
 }
 
 .helvetica .b-apply_form-button {
@@ -1267,4 +1268,30 @@
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA6oAAAAZCAYAAAA4ytNYAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wULBgMblZjqtgAAA7tJREFUeNrt3VuoZmUdx/HP3g4e8xSjZglqeajB1A5aF6ZJaAYh3sh4oaiDdCEhYnijN14ohER45YVUIna8K7AoCnTEGw3zBIp4QMLEZrKaGUcSh9lerOeFGmaPM7MPTvj9wIJ3r/28p//a8Ozf+6z3v+YWFhbOxqO4GE9JkiRJkmT1fQEP48K5hYUFI6h+DOdjR/VJkiRJkqyieTyJbbhwfuz8Ntbhe9UnSZIkSbLKrsHnRzY1C6pbcQtuNJ0CnCRJkiTJajgPd4xtK8xO/Z35Bb6F0/CP6pUkSZIkWWFv4hl8c7ZjfpcB148Bz+Ab1StJkiRJskK+is14Cev/+xe7BtX/4CL8ET/DTdUuSZIkSbLMrsZDeARfw7/3FFRnrsOt+CH+YGq0lCRJkiTJUqwbGfPH+D6u3N2g+T08wIM4C0dhI36LC6prkiRJkmQfXTAy5caRMc/BDxYbvGszpcVcjNtG+t0yEvD9eLZ6J0mSJEl24wxswOU4AU/hLjz8QXfc26A68xncgEvGk76D5/EXPIY/4e2OR5IkSZJ8ZKzByfgsvo4vms7OPRIv43em1dO9vrLMvgbVXa3HFaaV1pNxGHaMALvT1MFp29gWTKuxiz3hwWNLkmQlvYd38S/8E5vwdzyJV8c89mFO9J/Gl0yfPB+Pj+NYzOHoDl+SZAXNMttus+OYh+ZGAD0Sx437HDPG7MBf8QJ+bfo66X5ZalDdnRPxZZyK07F2vKH58WbmFrnfZhzU30aSZIWtNX2YesTYDsch4/YaUwf8zfib6Wyhn5g+Dd65jK9h3nTN8g2m7+x8akz2h45JfvsI0++M29vHPwLbOnxJkhU0C6GLhdhtYz7cYlodfQmv4Okxby7fC1mBoJokyf+z83CZ6XJtp+OTIzy+iPtw7xIe+0Z8B2eOUPzGmOQ34vf4c+VPkqSgmiTJ3liPa/EV0+rrL009G/bWj3CVaZX0cTyAX1XWJEkKqkmSLNWhpguUfxenmBpD3LmH8Tfjdrw1xv7UdGpxkiQpqCZJsuxuwN2mzvdX+d9OhmtNq67njiB7T+VKkqSgmiTJajgeT+A1Uzv+mUdMK67nm7oKJ0mSfTBfCZIk2W+bTI2XTsTPx757R0i9rJCaJMn+aUU1SZKlu9R0MfM1pg7Bl4+fkyRJQTVJkg/FPN7E6zgJn7C8111NkuQjN7EmSZKl2YnfYB0eK6QmSVJQTZLkQPC06dTf5ypFkiQF1SRJDgSbMKcGSkmSFFSTJDlAXIT38LlKkSTJ0rwPOj3Eu77kQ14AAAAASUVORK5CYII=);
+}
+
+.b-popup {
+	position: fixed;
+	display: none;
+	bottom: 15px;
+	left: 15px;
+	width: 0;
+	height: 0;
+	background: #fff;
+	border: 2px solid #52a276;
+	border-radius: 10px;
+	z-index: 9999;
+	overflow: hidden;
+}
+
+.b-popup--show {
+	display: block;
+}
+
+.b-popup-wrapper {
+	position: absolute;
+	width: 300px;
+	line-height: 24px;
+	font-size: 20px;
+	text-align: center;
 }

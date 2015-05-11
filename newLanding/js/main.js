@@ -370,4 +370,101 @@
 
 		return false;
 	}
-})()
+})();
+
+(function () {
+	var $applyForms = $('.js-apply_form'),
+		sendingClass = 'js-apply_form--sending',
+		$popup = $('#popup'),
+		$textWrapper = $popup.find('div'),
+		showPopupClass = 'b-popup--show',
+		closePopupTimer;
+
+	function showPopup (text) {
+		$textWrapper.text(text);
+
+		clearTimeout(closePopupTimer);
+
+		$popup
+			.addClass(showPopupClass)
+			.stop()
+			.animate({
+				height: $textWrapper.height(),
+				paddingTop: 30,
+				paddingBottom: 30
+			}, {
+				duaration: 500,
+				complete: function () {
+					$popup.animate({
+						width: 300,
+						paddingLeft: 15,
+						paddingRight: 15
+					}, {
+						duaration: 500,
+						complete: function () {
+							closePopupTimer = setTimeout(function () {
+								closePopup();
+							}, 5000);
+						}
+					});
+				}
+			});
+	}
+
+	function closePopup () {
+		clearTimeout(closePopupTimer);
+
+		$popup
+			.stop()
+			.animate({
+				width: 0,
+				paddingLeft: 0,
+				paddingRight: 0
+			}, {
+				duaration: 500,
+				complete: function () {
+					$popup
+						.animate({
+							height: 0,
+							paddingTop: 0,
+							paddingBottom: 0
+						}, {
+							duaration: 500,
+							complete: function () {
+								$popup.removeClass(showPopupClass);
+							}
+						});
+				}
+			});
+	}
+
+	$popup.bind('click', closePopup);
+
+	$applyForms.bind('submit', function (e) {
+		var $form = $(e.currentTarget),
+			sendingData = $form.serialize();
+			
+		if (!$form.hasClass(sendingClass)) {
+			$.ajax({
+				type: 'POST',
+				url: 'apply.php',
+				dataType: 'json',
+				data: sendingData,
+				beforeSend: function () {
+					$form.addClass(sendingClass);
+				},
+				success: function (data) {
+					showPopup(data.success || data.error);
+				},
+				error: function () {
+					showPopup('При отправке данных произошла ошибка.');
+				},
+				complete: function (data) {
+					$form.removeClass(sendingClass);
+				}
+			});
+		}
+
+		return false;
+	});
+})();
