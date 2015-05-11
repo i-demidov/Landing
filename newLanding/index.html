@@ -45,18 +45,18 @@
             <div class="b-navigation js-navigation">
                 <div class="b-navigation-wrapper">
                     <div class="b-navigation-logo"></div>
-                    <ul class="b-navigation-list">
+                    <ul class="b-navigation-list" id="navigation_list">
                         <li class="b-navigation-list-item">
-                            <a href="#">Обо мне</a>
+                            <a class="js-scroll_to_section" data-section_name="about_us" href="#">Обо мне</a>
                         </li>
                         <li class="b-navigation-list-item">
-                            <a href="#">Услуги</a>
+                            <a class="js-scroll_to_section" data-section_name="services" href="#">Услуги</a>
                         </li>
                         <li class="b-navigation-list-item">
-                            <a href="#">Стоимость</a>
+                            <a class="js-scroll_to_section" data-section_name="reviews" href="#">Отзывы</a>
                         </li>
                         <li class="b-navigation-list-item">
-                            <a href="#">Контакты</a>
+                            <a href="Price.docx">Стоимость</a>
                         </li>
                     </ul>
                 </div>
@@ -165,7 +165,7 @@
                         </form>
                     </div>
                 </div>
-                <div class="b-section b-section--grey">
+                <div class="b-section b-section--grey js-section" data-section_name="about_us">
                     <div class="b-section-wrapper">
                         <div class="b-about_us">
                             <h4 class="b-about_us-title">Резюме</h4>
@@ -258,7 +258,7 @@
                         </form>
                     </div>
                 </div>
-                <div class="b-section">
+                <div class="b-section js-section" data-section_name="services">
                     <div class="b-section-wrapper">
                         <div class="b-services">
                             <h4 class="b-section-header">Услуги</h4>
@@ -345,7 +345,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="b-section b-section--grey">
+                <div class="b-section b-section--grey js-section" data-section_name="reviews">
                     <div class="b-section-wrapper">
                         <div class="b-reviews">
                             <h4 class="b-section-header">Отзывы</h4>

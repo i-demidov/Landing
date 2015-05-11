@@ -45,6 +45,34 @@
 })();*/
 
 (function () {
+	var $scrollable = $('body, html'),
+		$navigationList = $('#navigation_list'),
+		$scrollLinks = $navigationList.find('.js-scroll_to_section'),
+		navigationBlockHeight = $('.js-navigation').height();
+
+	/*setTimeout(function () {
+		$scrollable.scrollTop(0);
+	}, 100);*/
+
+	$scrollLinks
+		.each(function (i, link) {
+			var $link = $(link),
+				$section = $('.js-section[data-section_name="' + $link.data('section_name') + '"]');
+
+			
+			$link.bind('click', function (e) {
+				$scrollable
+					.stop()
+					.animate({
+						scrollTop: $section.offset().top - navigationBlockHeight
+					}, 500);
+
+				return false;
+			});
+		});
+})();
+
+(function () {
 	var actions = [{
 			img: 'images/1.png',
 			backgroundImg: 'images/50-Low-Poly-Backgrounds/p6.jpg',
