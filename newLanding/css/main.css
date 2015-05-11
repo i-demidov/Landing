@@ -342,7 +342,7 @@
 	margin: 0 0 30px;
 	color: #ffffff;
 	display: inline-block;
-	font-family: 'Proxima Nova Lt';
+	font-family: 'Proxima Nova Lt', Helvetica, Arial, sans-serif;
 	font-size: 38px;/*40px;*/
 	line-height: 48px;
 	font-weight: normal;
@@ -354,12 +354,12 @@
 }
 
 .open_sans .b-welcome-head {
-	font-family: 'Open Sans';
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	font-weight: lighter;
 }
 
 .google_open_sans .b-welcome-head {
-	font-family: 'Open Sans Lt';
+	font-family: 'Open Sans Lt', Helvetica, Arial, sans-serif;
 }
 
 .b-welcome-head--sub {
@@ -367,7 +367,7 @@
 	line-height: 29px;
 	margin-top: 0;
 	margin-bottom: 35px;
-	font-family: 'Proxima Nova Rg';
+	font-family: 'Proxima Nova Rg', Helvetica, Arial, sans-serif;
 }
 
 .helvetica .b-welcome-head--sub,
@@ -376,7 +376,7 @@
 }
 
 .google_open_sans .b-welcome-head--sub {
-	font-family: 'Open Sans Rg';
+	font-family: 'Open Sans Rg', Helvetica, Arial, sans-serif;
 }
 
 .b-features {
@@ -395,7 +395,7 @@
 
 .b-features-head {
 	color: #ffffff;
-	font-family: 'Proxima Nova Lt';
+	font-family: 'Proxima Nova Lt', Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	/*font-weight: bold;*/
 	line-height: 20px;
@@ -409,12 +409,12 @@
 }
 
 .open_sans .b-features-head {
-	font-family: 'Open Sans';
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	font-weight: lighter;
 }
 
 .google_open_sans .b-features-head {
-	font-family: 'Open Sans Rg';
+	font-family: 'Open Sans Rg', Helvetica, Arial, sans-serif;
 }
 
 .b-features-head-list {
@@ -609,7 +609,7 @@
 .b-apply_form-button {
 	background: #4e5670;
 	color: #ffffff;
-	font-family: 'Proxima Nova Lt';
+	font-family: 'Proxima Nova Lt', Helvetica, Arial, sans-serif;
 	font-size: 20px;
 	line-height: 50px;
 	height: 50px;
@@ -626,12 +626,12 @@
 }
 
 .open_sans .b-apply_form-button {
-	font-family: 'Open Sans';
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	font-weight: lighter;
 }
 
 .google_open_sans .b-apply_form-button {
-	font-family: 'Open Sans Rg';
+	font-family: 'Open Sans Rg', Helvetica, Arial, sans-serif;
 }
 
 .b-about_us {
@@ -652,7 +652,7 @@
 
 .b-about_us-title {
 	color: #217978;
-	font-family: 'Proxima Nova Th';
+	font-family: 'Proxima Nova Th', Helvetica, Arial, sans-serif;
 	font-size: 34px;
 	line-height: 42px;
 	margin: 52px 0 14px;
@@ -665,12 +665,12 @@
 }
 
 .open_sans .b-about_us-title {
-	font-family: 'Open Sans';
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	font-weight: bold;
 }
 
 .google_open_sans .b-about_us-title {
-	font-family: 'Open Sans Bl';
+	font-family: 'Open Sans Bl', Helvetica, Arial, sans-serif;
 }
 
 .b-about_us-text {
@@ -684,7 +684,7 @@
 
 .b-about_us-text p {
 	/*font-smooth: always;*/
-	font-family: 'Proxima Nova Lt';
+	font-family: 'Proxima Nova Lt', Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	font-weight: normal;
 	line-height: 20px;
@@ -697,12 +697,12 @@
 }
 
 .open_sans .b-about_us-text p {
-	font-family: 'Open Sans';
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	font-weight: lighter;
 }
 
 .google_open_sans .b-about_us-text p {
-	font-family: 'Open Sans Rg';
+	font-family: 'Open Sans Rg', Helvetica, Arial, sans-serif;
 }
 
 .b-section-header {
@@ -719,7 +719,7 @@
 	margin: 0;
 	padding: 0;
 	text-align: justify;
-	font-family: 'Open Sans Bl';
+	font-family: 'Open Sans Bl', Helvetica, Arial, sans-serif;
 }
 
 .b-statistic:after,
@@ -750,7 +750,7 @@
 }
 
 .b-statistic-cont {
-	font-family: 'Open Sans Rg';
+	font-family: 'Open Sans Rg', Helvetica, Arial, sans-serif;
 }
 
 #font_select {
@@ -861,7 +861,7 @@
 .b-how_we_work-process_list-item-box-polygon-ps_circle-text .number {
 	color: #60698a;
 	display: block;
-	font-family: 'Open Sans ExtraBl';
+	font-family: 'Open Sans ExtraBl', Helvetica, Arial, sans-serif;
 	font-size: 40px;
 	font-weight: normal;
 	line-height: 46px;
@@ -925,7 +925,7 @@
 
 .b-how_we_work-process_list-item-box-process_desc h5 {
 	color: #000;
-	font-family: 'Proxima Nova Rg';
+	font-family: 'Proxima Nova Rg', Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	line-height: 20px;
 	margin: 15px 0 5px;
@@ -1039,7 +1039,7 @@
 .b-services-list-item h5 {
 	display: inline-block;
 	color: #525252;
-	font-family: 'Proxima Nova Rg';
+	font-family: 'Proxima Nova Rg', Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	font-weight: normal;
 	line-height: 20px;
@@ -1065,7 +1065,7 @@
 	padding: 0 0 0 18px;
 	/*max-height: 0;*/
 	color: #525252;
-	font-family: 'Proxima Nova Rg';
+	font-family: 'Proxima Nova Rg', Helvetica, Arial, sans-serif;
 	font-size: 14px;
 	font-weight: normal;
 	line-height: 20px;
@@ -1179,7 +1179,7 @@
 
 .b-reviews-company_header h5 {
 	color: #000;
-	font-family: 'Open Sans SemiBl';
+	font-family: 'Open Sans SemiBl', Helvetica, Arial, sans-serif;
 	font-size: 15px;
 	font-weight: normal;
 	line-height: 20px;
@@ -1190,7 +1190,7 @@
 
 .b-reviews-company_header h6 {
 	color: #dd4321;
-	font-family: 'Open Sans SemiBl';
+	font-family: 'Open Sans SemiBl', Helvetica, Arial, sans-serif;
 	font-size: 12px;
 	font-weight: normal;
 	line-height: 16px;
