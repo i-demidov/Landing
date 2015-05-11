@@ -975,6 +975,10 @@
 	padding: 18px 18px 18px 66px;
 }
 
+.b-services-list-item--openable {
+	cursor: pointer;
+}
+
 .b-services-list-item:before {
 	display: block;
 	position: absolute;
@@ -1026,7 +1030,6 @@
 
 .b-services-list-item--openable h5 {
 	border-bottom: 2px dashed #525252;
-	cursor: pointer;
 }
 
 /*.b-services-list-item--active {
