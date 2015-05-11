@@ -1282,6 +1282,7 @@
 	border-radius: 10px;
 	z-index: 9999;
 	overflow: hidden;
+	cursor: pointer;
 }
 
 .b-popup--show {
