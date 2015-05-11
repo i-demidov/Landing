@@ -17,6 +17,12 @@
             die();
         }
 
+        if (!preg_match("|^\+?[0-9\-\s\(\)]+$|i", $phone)) {
+            $json['error'] = 'Не верный формат номера телефона!';
+            echo json_encode($json);
+            die();
+        }
+
         function mime_header_encode($str, $data_charset, $send_charset) { // функция преобразования заголовков в верную кодировку 
             if($data_charset != $send_charset)
             $str=iconv($data_charset,$send_charset.'//IGNORE',$str);
